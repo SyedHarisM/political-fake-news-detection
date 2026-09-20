@@ -1,0 +1,103 @@
+{
+  "dataset": "LIAR",
+  "source": {
+    "source": "LIAR authors' original TSV archive",
+    "url": "https://www.cs.ucsb.edu/~william/data/liar_dataset.zip",
+    "schema": {
+      "id": "TSV column",
+      "original_label": "TSV column",
+      "statement": "TSV column",
+      "subject": "TSV column",
+      "speaker": "TSV column",
+      "speaker_job_title": "TSV column",
+      "state_info": "TSV column",
+      "party_affiliation": "TSV column",
+      "barely_true_counts": "TSV column",
+      "false_counts": "TSV column",
+      "half_true_counts": "TSV column",
+      "mostly_true_counts": "TSV column",
+      "pants_on_fire_counts": "TSV column",
+      "context": "TSV column"
+    },
+    "declared_label_names": [
+      "barely-true",
+      "false",
+      "half-true",
+      "mostly-true",
+      "pants-fire",
+      "true"
+    ]
+  },
+  "random_seed": 42,
+  "mapping": {
+    "FAKE (0)": [
+      "barely-true",
+      "false",
+      "pants-fire"
+    ],
+    "REAL (1)": [
+      "mostly-true",
+      "true"
+    ],
+    "excluded": [
+      "half-true"
+    ]
+  },
+  "raw_split_counts": {
+    "train": 10240,
+    "validation": 1284,
+    "test": 1267
+  },
+  "processed_split_counts": {
+    "train": 8126,
+    "validation": 1036,
+    "test": 1002
+  },
+  "excluded_half_true_counts": {
+    "train": 2114,
+    "validation": 248,
+    "test": 265
+  },
+  "original_class_distributions": {
+    "train": {
+      "barely-true": 1654,
+      "false": 1995,
+      "half-true": 2114,
+      "mostly-true": 1962,
+      "pants-fire": 839,
+      "true": 1676
+    },
+    "validation": {
+      "barely-true": 237,
+      "false": 263,
+      "half-true": 248,
+      "mostly-true": 251,
+      "pants-fire": 116,
+      "true": 169
+    },
+    "test": {
+      "barely-true": 212,
+      "false": 249,
+      "half-true": 265,
+      "mostly-true": 241,
+      "pants-fire": 92,
+      "true": 208
+    }
+  },
+  "binary_class_distributions": {
+    "train": {
+      "FAKE": 4488,
+      "REAL": 3638
+    },
+    "validation": {
+      "FAKE": 616,
+      "REAL": 420
+    },
+    "test": {
+      "FAKE": 553,
+      "REAL": 449
+    }
+  },
+  "total_raw_samples": 12791,
+  "total_processed_samples": 10164
+}

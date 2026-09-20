@@ -1,0 +1,95 @@
+{
+  "project": "VeriNews AI",
+  "created_at_utc": "2026-09-20T16:36:01.023049+00:00",
+  "random_seed": 42,
+  "selected_model": "logistic_regression",
+  "selected_model_display_name": "Logistic Regression",
+  "selection_criterion": "Highest validation macro F1; Logistic Regression wins exact ties.",
+  "class_mapping": {
+    "0": "FAKE",
+    "1": "REAL"
+  },
+  "classifier_classes": [
+    0,
+    1
+  ],
+  "training_samples": 8126,
+  "validation_samples": 1036,
+  "test_samples": 1002,
+  "tfidf": {
+    "ngram_range": [
+      1,
+      2
+    ],
+    "max_features": 20000,
+    "min_df": 2,
+    "sublinear_tf": true,
+    "lowercase": false,
+    "fitted_vocabulary_size": 20000
+  },
+  "model_hyperparameters": {
+    "logistic_regression": {
+      "C": 1.0,
+      "class_weight": "balanced",
+      "dual": false,
+      "fit_intercept": true,
+      "intercept_scaling": 1,
+      "l1_ratio": 0.0,
+      "max_iter": 2000,
+      "n_jobs": null,
+      "penalty": "deprecated",
+      "random_state": 42,
+      "solver": "liblinear",
+      "tol": 0.0001,
+      "verbose": 0,
+      "warm_start": false
+    },
+    "naive_bayes": {
+      "alpha": 1.0,
+      "class_prior": null,
+      "fit_prior": true,
+      "force_alpha": true
+    }
+  },
+  "software_versions": {
+    "scikit-learn": "1.9.1",
+    "pandas": "2.3.3",
+    "numpy": "2.5.3",
+    "joblib": "1.6.0"
+  },
+  "dataset_summary": {
+    "source": {
+      "source": "LIAR authors' original TSV archive",
+      "url": "https://www.cs.ucsb.edu/~william/data/liar_dataset.zip",
+      "schema": {
+        "id": "TSV column",
+        "original_label": "TSV column",
+        "statement": "TSV column",
+        "subject": "TSV column",
+        "speaker": "TSV column",
+        "speaker_job_title": "TSV column",
+        "state_info": "TSV column",
+        "party_affiliation": "TSV column",
+        "barely_true_counts": "TSV column",
+        "false_counts": "TSV column",
+        "half_true_counts": "TSV column",
+        "mostly_true_counts": "TSV column",
+        "pants_on_fire_counts": "TSV column",
+        "context": "TSV column"
+      },
+      "declared_label_names": [
+        "barely-true",
+        "false",
+        "half-true",
+        "mostly-true",
+        "pants-fire",
+        "true"
+      ]
+    },
+    "processed_split_counts": {
+      "train": 8126,
+      "validation": 1036,
+      "test": 1002
+    }
+  }
+}

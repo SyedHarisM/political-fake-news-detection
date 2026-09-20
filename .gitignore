@@ -1,0 +1,21 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.streamlit/secrets.toml
+*.log
+.chart-data-*/
+
+# Local academic deliverables and non-deployment material.
+documentation/
+docs/
+tests/
+pytest.ini
+
+# Keep only the small sample used by the Streamlit interface.
+data/raw/
+data/processed/*
+!data/processed/held_out_examples.csv
+
+# Generated artifacts can be recreated with `python -m src.train`.
+# They are intentionally retained in this submission directory.

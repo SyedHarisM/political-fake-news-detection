@@ -1,0 +1,199 @@
+{
+  "selection_criterion": "Highest validation macro F1; Logistic Regression wins exact ties.",
+  "selected_model": "logistic_regression",
+  "positive_class": "REAL (1)",
+  "models": {
+    "logistic_regression": {
+      "validation": {
+        "positive_class": "REAL (1)",
+        "accuracy": 0.6631274131274131,
+        "precision": 0.5750528541226215,
+        "recall": 0.6476190476190476,
+        "f1": 0.6091825307950728,
+        "macro_f1": 0.6565844799861709,
+        "weighted_f1": 0.6655524163196218,
+        "roc_auc": 0.7172116573902289,
+        "confusion_matrix": [
+          [
+            415,
+            201
+          ],
+          [
+            148,
+            272
+          ]
+        ],
+        "classification_report": {
+          "FAKE": {
+            "precision": 0.7371225577264654,
+            "recall": 0.6737012987012987,
+            "f1-score": 0.7039864291772688,
+            "support": 616.0
+          },
+          "REAL": {
+            "precision": 0.5750528541226215,
+            "recall": 0.6476190476190476,
+            "f1-score": 0.6091825307950728,
+            "support": 420.0
+          },
+          "accuracy": 0.6631274131274131,
+          "macro avg": {
+            "precision": 0.6560877059245435,
+            "recall": 0.6606601731601731,
+            "f1-score": 0.6565844799861709,
+            "support": 1036.0
+          },
+          "weighted avg": {
+            "precision": 0.6714186238330152,
+            "recall": 0.6631274131274131,
+            "f1-score": 0.6655524163196218,
+            "support": 1036.0
+          }
+        }
+      },
+      "test": {
+        "positive_class": "REAL (1)",
+        "accuracy": 0.6516966067864272,
+        "precision": 0.6054852320675106,
+        "recall": 0.6391982182628062,
+        "f1": 0.6218851570964247,
+        "macro_f1": 0.6495179717026989,
+        "weighted_f1": 0.6523860482686197,
+        "roc_auc": 0.7013214013862431,
+        "confusion_matrix": [
+          [
+            366,
+            187
+          ],
+          [
+            162,
+            287
+          ]
+        ],
+        "classification_report": {
+          "FAKE": {
+            "precision": 0.6931818181818182,
+            "recall": 0.6618444846292948,
+            "f1-score": 0.6771507863089732,
+            "support": 553.0
+          },
+          "REAL": {
+            "precision": 0.6054852320675106,
+            "recall": 0.6391982182628062,
+            "f1-score": 0.6218851570964247,
+            "support": 449.0
+          },
+          "accuracy": 0.6516966067864272,
+          "macro avg": {
+            "precision": 0.6493335251246644,
+            "recall": 0.6505213514460505,
+            "f1-score": 0.6495179717026989,
+            "support": 1002.0
+          },
+          "weighted avg": {
+            "precision": 0.6538846453621334,
+            "recall": 0.6516966067864272,
+            "f1-score": 0.6523860482686197,
+            "support": 1002.0
+          }
+        }
+      }
+    },
+    "naive_bayes": {
+      "validation": {
+        "positive_class": "REAL (1)",
+        "accuracy": 0.6467181467181468,
+        "precision": 0.584375,
+        "recall": 0.4452380952380952,
+        "f1": 0.5054054054054054,
+        "macro_f1": 0.6153153153153152,
+        "weighted_f1": 0.636109082055028,
+        "roc_auc": 0.7048160173160174,
+        "confusion_matrix": [
+          [
+            483,
+            133
+          ],
+          [
+            233,
+            187
+          ]
+        ],
+        "classification_report": {
+          "FAKE": {
+            "precision": 0.6745810055865922,
+            "recall": 0.7840909090909091,
+            "f1-score": 0.7252252252252253,
+            "support": 616.0
+          },
+          "REAL": {
+            "precision": 0.584375,
+            "recall": 0.4452380952380952,
+            "f1-score": 0.5054054054054054,
+            "support": 420.0
+          },
+          "accuracy": 0.6467181467181468,
+          "macro avg": {
+            "precision": 0.629478002793296,
+            "recall": 0.6146645021645021,
+            "f1-score": 0.6153153153153152,
+            "support": 1036.0
+          },
+          "weighted avg": {
+            "precision": 0.6380110033217575,
+            "recall": 0.6467181467181468,
+            "f1-score": 0.636109082055028,
+            "support": 1036.0
+          }
+        }
+      },
+      "test": {
+        "positive_class": "REAL (1)",
+        "accuracy": 0.6497005988023952,
+        "precision": 0.649390243902439,
+        "recall": 0.47438752783964366,
+        "f1": 0.5482625482625483,
+        "macro_f1": 0.6310994892901983,
+        "weighted_f1": 0.6396973354647248,
+        "roc_auc": 0.6918327647937752,
+        "confusion_matrix": [
+          [
+            438,
+            115
+          ],
+          [
+            236,
+            213
+          ]
+        ],
+        "classification_report": {
+          "FAKE": {
+            "precision": 0.6498516320474778,
+            "recall": 0.7920433996383364,
+            "f1-score": 0.7139364303178484,
+            "support": 553.0
+          },
+          "REAL": {
+            "precision": 0.649390243902439,
+            "recall": 0.47438752783964366,
+            "f1-score": 0.5482625482625483,
+            "support": 449.0
+          },
+          "accuracy": 0.6497005988023952,
+          "macro avg": {
+            "precision": 0.6496209379749585,
+            "recall": 0.63321546373899,
+            "f1-score": 0.6310994892901983,
+            "support": 1002.0
+          },
+          "weighted avg": {
+            "precision": 0.6496448822699105,
+            "recall": 0.6497005988023952,
+            "f1-score": 0.6396973354647248,
+            "support": 1002.0
+          }
+        }
+      }
+    }
+  }
+}
